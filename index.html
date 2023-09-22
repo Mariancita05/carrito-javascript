@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.ico.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carrito</title>
+  </head>
+  <body>
+    <section id="navbar-index">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <span><i class="bi bi-bag-heart"></i></span>
+         
+            
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button type="button" class="btn" id="btn_singup">SingUp</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn" id="btn_login">LogIn</button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  aria-current="page" href="./home.html"
+                  >Buscar sin registrarse</a
+                >
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <h1>Carrito de compras</h1>
+    <section id="singup" class="section">
+      <form class="formulario" id="registro-form">
+        <div class="mb-3" id="registro">
+          <label for="email_singup" class="form-label"
+            >Email</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="email_singup"            
+            name="email_singup"            
+          /> 
+          <span id="error_email" class="error__inactive"
+              ><i class="bi bi-exclamation-triangle-fill"></i>Ingresa un correo
+              válido
+            </span>         
+        </div>
+        <div class="mb-3">
+          <label for="usuario_singup" class="form-label"
+            >Usuario</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="usuario_singup"
+            name="usuario_singup"
+          />    
+          <span id="error_usuario" class="error__inactive"
+                ><i class="bi bi-exclamation-triangle-fill"></i>4 a 16 digitos,
+                sin chars especiales ej: acentos /, $ , #</span
+              >      
+        </div>
+        <div class="mb-3">
+          <label for="password_singup" class="form-label">Contraseña</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password_singup"
+            name="password_singup"
+          />
+        </div>
+        <span id="error_password" class="error__inactive"
+        ><i class="bi bi-exclamation-triangle-fill"></i>8 a 12 digitos
+        (Obligatorio)</span
+      >
+        <div class="mb-3">
+          <label for="password2_singup" class="form-label">Repetir contraseña</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password2_singup"
+            name="password2_singup"
+          />
+          <span id="error_password2" class="error__inactive"
+                ><i class="bi bi-exclamation-triangle-fill"></i>Las contraseñas
+                no coinciden</span
+              >
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+    <section id="login" class="section noActive ">
+      <form class="formulario" id="login-form">
+        <div class="mb-3" id="login">
+          <label for="usuario_login" class="form-label"
+            >Usuario</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="usuario_login"
+            name="usuario_login"
+          />          
+        </div>
+        <div class="mb-3">
+          <label for="password_login" class="form-label">Contraseña</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password_login"
+            name="password_login"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </form>
+    </section>
+
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
