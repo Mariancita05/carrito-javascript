@@ -14,16 +14,29 @@
     font-family: 'Rubik', sans-serif;
 }
 
-body,html {
-    background: #4b33a8;
-   
-    
-} 
+body,
+html {
+    background: #4b33a8
+}
+
+#navbar-index nav li button,
+#navbar-index nav li a{
+    color: #4b33a8;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+h1{
+    color: #eee;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
 
 ul {
     list-style-type: none;
 }
-.section{
+
+.section {
     height: 100%;
     margin: 0;
     display: flex;
@@ -31,13 +44,12 @@ ul {
     align-items: center;
 }
 
-
-.formulario{
+.formulario {
     width: 50%;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     justify-content: center;
 }
 
@@ -88,7 +100,6 @@ ul {
     padding-bottom: 10px;
     margin-top: 10px;
 }
-
 
 .cart-item {
     width: 45%;
@@ -164,8 +175,8 @@ ul {
     font-size: 10px;
     padding: 0;
   } */
-  
-  .sidebar-social i {
+
+.sidebar-social i {
     display: block;
     margin: 0 auto 10px auto;
     width: 32px;
@@ -177,8 +188,8 @@ ul {
     color: #444444;
     margin-top: 0;
     padding-top: 5px;
-  }
-  
+}
+
 /*   .sidebar-social a {
     text-decoration: none;
     width: 100%;
@@ -188,20 +199,20 @@ ul {
     padding: 0;
   }
    */
-  .sidebar-social a span {
+.sidebar-social a span {
     color: black;
     font-size: 15px;
     padding: 5px 0 10px 0;
     display: block;
     text-transform: uppercase;
     letter-spacing: 1px;
-  }
-  /* CSS para posicionar el bade cerca del carrito*/
-  .cart {
+}
+
+.cart {
     position: relative;
-  }
-  
-  #numerito {
+}
+
+#numerito {
     position: absolute;
     top: 0;
     left: 55%;
@@ -214,31 +225,51 @@ ul {
     align-items: center;
     color: white;
     padding: 2px;
-  }
-  .noActive{
+}
+
+#carrito h2{
+    margin-top: 30px;
+    color: #eee;
+}
+
+#carrito span{
+    color: #f9f9f9;
+    font-weight: 500;
+}
+#carrito #total{
+    color: #f9f9f9;
+    font-weight: 400;
+}
+
+.noActive {
     display: none;
-  }
-  
-.error__inactive{
+}
+
+.error__inactive {
     display: none;
 }
 
 
-.check-active{
+.check-active {
     border: 4px solid green;
 }
 
-.check-error{
+.check-error {
     border: 4px solid red;
 }
 
-.error__nombre, .error__usuario, .error__password, .error__password2, .error__email, .error__ingreso {
+.error__nombre,
+.error__usuario,
+.error__password,
+.error__password2,
+.error__email,
+.error__ingreso {
     display: none;
     color: red;
     padding-left: 12px;
     gap: 10px;
 }
 
-.error-active{
+.error-active {
     display: flex;
 }
