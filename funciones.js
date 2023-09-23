@@ -166,6 +166,14 @@ document.addEventListener("DOMContentLoaded", function () {
               //Acutalizar el precio total
               getTotal();
             });
+            item.addEventListener('change', ()=>{
+              let newTotalProducts = 0
+              shoppingCartArray.forEach((p) => {
+                newTotalProducts += p.quantity
+                console.log(newTotalProducts)
+              })
+              totalProductsElement.textContent = newTotalProducts
+            })
           });
         }
 
